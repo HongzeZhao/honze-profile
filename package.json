@@ -1,0 +1,26 @@
+{
+  "name": "profile",
+  "version": "1.0.0",
+  "description": "honze profile",
+  "main": "app.js",
+  "scripts": {
+    "build": "grunt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HongzeZhao/honze-profile.git"
+  },
+  "keywords": [
+    "profile"
+  ],
+  "author": "honze",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HongzeZhao/honze-profile/issues"
+  },
+  "homepage": "https://github.com/HongzeZhao/honze-profile#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-uglify": "^2.0.0"
+  }
+}
