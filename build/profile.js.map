@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/main.js"],"names":[],"mappings":";;AAAA;;AAEA,oBAAO,EAAC,GAAE,EAAH,EAAO,GAAE,EAAT,EAAP","file":"profile.js","sourcesContent":["import {output} from './output.js'\n\noutput({x:65, y:30});"]}

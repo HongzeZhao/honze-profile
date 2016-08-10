@@ -6,13 +6,25 @@ module.exports = function(grunt){
 				banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd")%>*/\n'
 			},
 			build: {
-				src: 'src/<%= pkg.name %>.js',
+				src: 'build/<%= pkg.name %>.js',
 				dest: 'build/<%= pkg.name %>.min.js'
 			}
-		}
+		},
+		babel: {
+	        options: {
+	            sourceMap: true,
+	            presets: ['babel-preset-es2015']
+	        },
+	        dist: {
+	            files: {
+	                'build/<%= pkg.name %>.js': 'src/**/*.js'
+	            }
+	        }
+	    }
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-uglify');
+	grunt.loadNpmTasks('grunt-babel');
 
-	grunt.registerTask('default', ['uglify']);
+	grunt.registerTask('default', ['babel','uglify']);
 };

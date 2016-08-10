@@ -20,7 +20,9 @@
   },
   "homepage": "https://github.com/HongzeZhao/honze-profile#readme",
   "devDependencies": {
+    "babel-preset-es2015": "^6.13.2",
     "grunt": "^1.0.1",
+    "grunt-babel": "^6.0.0",
     "grunt-contrib-uglify": "^2.0.0"
   }
 }
